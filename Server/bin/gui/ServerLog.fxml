@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="500.0" prefWidth="600.0" stylesheets="@ServerPort.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerLogController">
+   <children>
+      <VBox alignment="CENTER" layoutX="50.0" layoutY="50.0" prefHeight="400.0" prefWidth="500.0" spacing="30.0" style="-fx-background-color: #E3F2FD; -fx-padding: 30; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Label alignment="CENTER" style="-fx-font-size: 24px; -fx-text-fill: #1565C0; -fx-font-weight: bold;" text="📜 Server Log" />
+            
+            <TextArea fx:id="logArea" editable="false" wrapText="true" prefHeight="300" prefWidth="500" style="-fx-font-family: 'Arial'; -fx-font-size: 16px; -fx-text-fill: #333333; -fx-background-color: #ffffff; -fx-border-color: #64B5F6; -fx-border-radius: 10; -fx-padding: 10;" />
+            
+            <Label fx:id="IpServer" alignment="CENTER" style="-fx-font-size: 18px; -fx-text-fill: #1976D2; -fx-font-weight: bold; -fx-padding: 5; -fx-background-color: #E3F2FD; -fx-border-radius: 5;" text="Server IP: " />
+         </children>
+      </VBox>
+   </children>
+</Pane>

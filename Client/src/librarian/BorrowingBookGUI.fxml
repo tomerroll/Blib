@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="726.0" prefWidth="1200.0" stylesheets="@Librarian.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarian.BorrowingBookController">
+    <children>
+        <!-- Sidebar Section -->
+        <VBox layoutX="0.0" layoutY="0.0" prefHeight="726.0" prefWidth="220.0" styleClass="sidebar">
+            <children>
+                <Label alignment="TOP_CENTER" prefHeight="642.0" prefWidth="167.0" styleClass="sidebar-title" text="BLib" />
+                <VBox alignment="CENTER" spacing="20.0" />
+                <Button fx:id="btnBack" onAction="#Back" prefHeight="48.0" prefWidth="176.0" styleClass="btn-danger" text="⬅ Back" />
+            </children>
+        </VBox>
+
+        <!-- Main Container -->
+        <VBox layoutX="222.0" layoutY="14.0" prefHeight="680.0" prefWidth="959.0" spacing="25.0" styleClass="vcr-container">
+            <!-- Header -->
+            <Label alignment="CENTER" styleClass="BB-header" text="📖 Borrow a Book" />
+            
+            <!-- Form Section -->
+            <VBox alignment="CENTER" spacing="15.0" styleClass="form-container">
+                <GridPane hgap="10" vgap="15">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" prefWidth="120" />
+                        <ColumnConstraints halignment="LEFT" prefWidth="300" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="40.0" />
+                        <RowConstraints minHeight="40.0" />
+                        <RowConstraints minHeight="40.0" />
+                        <RowConstraints minHeight="40.0" />
+                        <RowConstraints />
+                    </rowConstraints>
+                    
+                    <Label styleClass="form-label" text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="username" styleClass="form-textfield" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                    <Label styleClass="form-label" text="Book:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TextField fx:id="bookId" promptText="Scan Barcode..." styleClass="form-textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                    <Label styleClass="form-label" text="Borrow Date:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <DatePicker fx:id="borrowdate" styleClass="form-textfield" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                    <Label styleClass="form-label" text="Return Date:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <DatePicker fx:id="returndate" styleClass="form-textfield" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    
+                    <!-- Submit Button -->
+                    <Button fx:id="submitButton" onAction="#handleSubmitButtonAction" styleClass="btn-primary" text="Borrow Book" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                </GridPane>
+            </VBox>
+
+            <!-- Back Button at Bottom Left -->
+            <VBox alignment="BOTTOM_LEFT" spacing="10.0" />
+
+        </VBox>
+    </children>
+</Pane>

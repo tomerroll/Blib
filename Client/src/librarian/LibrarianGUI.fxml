@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane prefHeight="600.0" prefWidth="900.0" stylesheets="@Librarian.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarian.LibrarianGUIController">
+
+   <children>
+      <!-- Sidebar Section -->
+      <VBox layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="220.0" styleClass="sidebar">
+         <children>
+         
+            <Label alignment="TOP_CENTER" prefHeight="324.0" prefWidth="167.0" styleClass="sidebar-title" text="BLib" />
+           
+            <VBox alignment="CENTER" prefHeight="287.0" prefWidth="180.0" spacing="20.0">
+                <Button fx:id="btnDM" onAction="#DM" prefWidth="205.0" styleClass="btn-secondary" text="💬 DM" />
+                <Button fx:id="btnBack" onAction="#Back" prefHeight="48.0" prefWidth="176.0" styleClass="btn-danger" text="Log Out" />
+            </VBox>
+         </children>
+      </VBox>
+
+      <!-- Content Section -->
+      <VBox layoutX="220.0" layoutY="0.0" prefHeight="600.0" prefWidth="680.0" spacing="20.0" styleClass="content-box">
+         <children>
+            <Label fx:id="welcome" styleClass="header" text="Welcome, Librarian!" />
+            <Label styleClass="sub-header" text="Manage books, subscribers, and reports easily." />
+
+            <HBox alignment="CENTER" spacing="20.0">
+               <Button fx:id="btnSearch" onAction="#Search" prefWidth="300.0" styleClass="btn-primary" text="📖 Book Search" />
+               <Button fx:id="btnMonthly_Reports" onAction="#Monthly_Reports" prefWidth="300.0" styleClass="btn-primary" text="📊 Monthly Reports" />
+            </HBox>
+            
+            <HBox alignment="CENTER" spacing="20.0">
+               <Button fx:id="btnViewing_Card_Reader" onAction="#Viewing_Card_Reader" prefWidth="300.0" styleClass="btn-primary" text="📇 Viewing Card Reader" />
+               <Button fx:id="btnSubscription_Registration" onAction="#Subscription_Registration" prefWidth="300.0" styleClass="btn-primary" text="👤 Subscriber Registration" />
+            </HBox>
+            
+            <HBox alignment="CENTER" spacing="20.0">
+               <Button fx:id="btnBorrowing_a_Book" onAction="#Borrowing_a_Book" prefWidth="300.0" styleClass="btn-primary" text="📚 Borrowing a Book" />
+               <Button fx:id="btnReturing_a_Book" onAction="#Returing_a_Book" prefWidth="300.0" styleClass="btn-primary" text="📦 Returning a Book" />
+            </HBox>
+            
+            <Button fx:id="btnlost_book" onAction="#lost_book" prefWidth="300.0" styleClass="btn-primary" text="🚨 Report Lost Book" />
+
+         </children>
+      </VBox>
+	
+
+      <!-- Footer Section -->
+      <Rectangle arcHeight="10.0" arcWidth="10.0" height="50.0" layoutY="550.0" styleClass="footer" width="900.0" />
+      <Label layoutX="350.0" layoutY="567.0" styleClass="footer-text" text="Library Management System © 2025" />
+   </children>
+</Pane>

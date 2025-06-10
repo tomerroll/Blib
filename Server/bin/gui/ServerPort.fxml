@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="500.0" prefWidth="600.0" stylesheets="@ServerPort.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerPortController">
+   <children>
+      <VBox alignment="CENTER" layoutX="50.0" layoutY="50.0" prefHeight="400.0" prefWidth="500.0" spacing="30.0" styleClass="server-port-container">
+         <children>
+            <Label alignment="CENTER" styleClass="server-port-title" text="🌐 Server Port Configuration" />
+            
+            <VBox alignment="CENTER" spacing="15.0">
+                <Label styleClass="server-port-label" text="Enter Port Number:" />
+                <TextField fx:id="portxt" promptText="Enter port..." styleClass="server-port-textfield" />
+            </VBox>
+            
+            <VBox alignment="CENTER" spacing="15.0">
+                <Button fx:id="btnDone" onAction="#Done" styleClass="btn-apply" text="✅ Apply" />
+                <Button fx:id="btnExit" onAction="#getExitBtn" styleClass="btn-exit" text="❌ Exit" />
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

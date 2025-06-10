@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="600.0" prefWidth="900.0" stylesheets="@Subscriber.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subscriber.ActivityHistoryController">
+   <children>
+      <!-- Sidebar Section -->
+      <VBox layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="220.0" styleClass="sidebar">
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="324.0" prefWidth="167.0" styleClass="sidebar-title" text="BLib" />
+            <VBox alignment="CENTER" prefHeight="287.0" prefWidth="180.0" spacing="20.0">
+         
+                <Button fx:id="btnBack" onAction="#back" prefHeight="48.0" prefWidth="176.0" styleClass="btn-danger" text="⬅ Back" />
+            </VBox>
+         </children>
+      </VBox>
+      
+      <!-- Content Section -->
+      <VBox layoutX="220.0" layoutY="0.0" prefHeight="600.0" prefWidth="680.0" spacing="20.0" styleClass="content-box">
+         <children>
+            <Label styleClass="header" text="📜 Activity History" />
+            <Label styleClass="sub-header" text="View your past transactions and activity." />
+            
+            <TableView fx:id="ActivityHistoryTable" prefHeight="400.0" prefWidth="680.0" styleClass="vcr-table">
+            <placeholder>
+                    <Label text="No activity found.\nPlease check back after some actions." />
+            </placeholder>
+                <columns>
+                    <TableColumn fx:id="colTransaction" prefWidth="330.0" text="Transaction" styleClass="vcr-info-bold" />
+                    <TableColumn fx:id="colTime" prefWidth="330.0" text="Time" styleClass="vcr-info-bold" />
+                </columns>
+            </TableView>
+            
+            <Label fx:id="lblStatus" styleClass="sub-header" text="" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

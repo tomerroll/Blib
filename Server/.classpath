@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/OCSF"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaFX"/>
+	<classpathentry kind="lib" path="C:/Users/tomer/OneDrive/שולחן העבודה/הנדסת תוכנה/סמסטר 5/שיטות הנדסיות תירגול/פרוייקט/JARS/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tomer/OneDrive/שולחן העבודה/הנדסת תוכנה/סמסטר 5/שיטות הנדסיות תירגול/פרוייקט/JARS/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tomer/OneDrive/שולחן העבודה/הנדסת תוכנה/סמסטר 5/שיטות הנדסיות תירגול/פרוייקט/JARS/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

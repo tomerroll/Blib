@@ -1,0 +1,328 @@
+/* Global Styles */
+.sidebar {
+    -fx-background-color: #2C3E50;
+    -fx-padding: 20;
+}
+
+.sidebar-title {
+-fx-font-family: "Comic Sans MS";    
+-fx-text-fill: white;
+    -fx-font-size: 70px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+}
+
+.divider {
+    -fx-fill: white;
+}
+
+.content-box {
+    -fx-background-color: #ffffff;
+    -fx-padding: 30;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+.header {
+    -fx-font-size: 30px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+
+.sub-header {
+    -fx-font-size: 20px;
+    -fx-text-fill: #555;
+    -fx-font-weight: bold;
+}
+
+/* Button Styles */
+.button {
+    -fx-text-fill: white;
+    -fx-font-size: 19px;
+    -fx-background-radius: 12;
+    -fx-padding: 10 20;
+}
+
+/* Primary Buttons */
+.btn-primary {
+    -fx-background-color: #2980B9;
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+    -fx-background-color: #27AE60;
+}
+
+/* Danger Buttons */
+.btn-danger {
+    -fx-background-color: #E74C3C;
+}
+
+/* Footer Styles */
+.footer {
+    -fx-fill: #eeeeee;
+}
+
+.footer-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #777;
+}
+
+/* Viewing Card Reader Styles */
+.vcr-container {
+    -fx-background-color: #ffffff;
+    -fx-padding: 30;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+.vcr-header {
+    -fx-font-size: 28px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-pref-width: 100%;
+}
+.SR-header{
+	-fx-font-size: 28px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+.RB-header{
+    -fx-font-size: 28px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+.BB-header{
+    -fx-font-size: 28px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+.MR-header{
+    -fx-font-size: 28px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+.BL-header{
+    -fx-font-size: 28px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+.DM-header{
+    -fx-font-size: 28px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+
+.vcr-input-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #555;
+    -fx-font-weight: bold;
+}
+
+.vcr-textfield {
+    -fx-font-size: 16px;
+    -fx-pref-height: 30px;
+    -fx-background-radius: 8;
+}
+
+.vcr-ok-button {
+    -fx-background-color: #2980B9;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20;
+}
+
+.vcr-tabpane {
+    -fx-tab-min-width: 150px;
+    -fx-tab-max-width: 200px;
+    -fx-font-size: 16px;
+    -fx-background-radius: 12;
+}
+
+.vcr-card {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 20;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-spacing: 10;
+}
+
+/* Bold Labels (Field Names) */
+.vcr-info-bold {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+/* Normal Labels (Field Values) */
+.vcr-info {
+    -fx-font-size: 18px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #555;
+}
+
+.vcr-table {
+    -fx-background-color: white;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+}
+
+.vcr-back-button {
+    -fx-background-color: #E74C3C;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20;
+}
+
+/* Subscription Registration Styles */
+.form-container {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-spacing: 15;
+}
+
+.form-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+
+.form-textfield {
+    -fx-font-size: 16px;
+    -fx-pref-height: 30px;
+    -fx-background-radius: 8;
+    -fx-border-color: #ccc;
+    -fx-padding: 5;
+}
+.section-header {
+    -fx-font-size: 24px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+
+}
+
+/* Default button styling */
+.button {
+    -fx-text-fill: white;
+    -fx-font-size: 19px;
+    -fx-background-radius: 12;
+    -fx-padding: 10 20;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for all buttons */
+.button:hover {
+    -fx-opacity: 0.8;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Specific hover effects for primary buttons */
+.btn-primary:hover {
+    -fx-background-color: #1F6698;
+}
+
+/* Specific hover effects for secondary buttons */
+.btn-secondary:hover {
+    -fx-background-color: #1F8A50;
+}
+
+/* Specific hover effects for danger buttons */
+.btn-danger:hover {
+    -fx-background-color: #C0392B;
+}
+
+/* Table Styling for Request Extension */
+.vcr-table .column-header {
+
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.vcr-table .table-row-cell {
+    -fx-background-color: #f8f9fa;
+}
+
+.vcr-table .table-row-cell:odd {
+    -fx-background-color: #e9ecef;
+}
+
+.vcr-table .table-row-cell:selected {
+    -fx-background-color: #1F6698;
+    -fx-text-fill: white;
+}
+
+/* Request Extension Button */
+.btn-request-extension {
+    -fx-background-color: #27AE60;
+}
+
+.btn-request-extension:hover {
+    -fx-background-color: #1F8A50;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+/* Labels for Personal Details */
+.form-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+
+/* Text fields for user input */
+.form-textfield {
+    -fx-font-size: 16px;
+    -fx-pref-height: 30px;
+    -fx-background-radius: 8;
+    -fx-border-color: #ccc;
+    -fx-padding: 5;
+}
+
+/* Update Button */
+.btn-update {
+    -fx-background-color: #27AE60;
+}
+
+.btn-update:hover {
+    -fx-background-color: #1F8A50;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Default button styling */
+.button {
+    -fx-text-fill: white;
+    -fx-font-size: 19px;
+    -fx-background-radius: 12;
+    -fx-padding: 10 20;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for all buttons */
+.button:hover {
+    -fx-opacity: 0.8;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Specific hover effects for primary buttons */
+.btn-primary:hover {
+    -fx-background-color: #1F6698;
+}
+
+/* Specific hover effects for secondary buttons */
+.btn-secondary:hover {
+    -fx-background-color: #1F8A50;
+}
+
+/* Specific hover effects for danger buttons */
+.btn-danger:hover {
+    -fx-background-color: #C0392B;
+}

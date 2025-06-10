@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="665.0" prefWidth="1008.0" stylesheets="@Subscriber.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subscriber.ReservationController">
+   <children>
+      <!-- Sidebar Section -->
+      <VBox layoutX="0.0" layoutY="0.0" prefHeight="665.0" prefWidth="235.0" styleClass="sidebar">
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="324.0" prefWidth="167.0" styleClass="sidebar-title" text="BLib" />
+            <VBox alignment="CENTER" prefHeight="287.0" prefWidth="180.0" spacing="20.0">
+                <Button fx:id="btnBack" onAction="#back" prefHeight="48.0" prefWidth="176.0" styleClass="btn-danger" text="⬅ Back" />
+            </VBox>
+         </children>
+      </VBox>
+      
+      <!-- Content Section -->
+      <VBox layoutX="240.0" layoutY="25.0" prefHeight="626.0" prefWidth="754.0" spacing="20.0" styleClass="content-box">
+         <children>
+            <Label styleClass="header" text="📖 Book Reservation" />
+            <Label styleClass="sub-header" text="Select the desired book and click 'Reserve'." />
+            
+            <TableView fx:id="bookTable" prefHeight="400.0" prefWidth="680.0" styleClass="vcr-table">
+            <placeholder>
+                <Label text="You can't place orders right now.\nFor more information, please contact the librarian." />
+            </placeholder>
+                <columns>
+                    <TableColumn fx:id="colBookId" prefWidth="220.0" styleClass="vcr-info-bold" text="Book ID" />
+                    <TableColumn fx:id="colTitle" prefWidth="220.0" styleClass="vcr-info-bold" text="Book Title" />
+                    <TableColumn fx:id="colAuthor" prefWidth="244.0" styleClass="vcr-info-bold" text="Author" />
+                </columns>
+            </TableView>
+            
+            <VBox alignment="CENTER" spacing="20.0">
+                <Button fx:id="btnReserve" onAction="#reserveBook" prefWidth="300.0" styleClass="btn-primary" text="📌 Reserve Book" />
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

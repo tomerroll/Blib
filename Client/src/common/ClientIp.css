@@ -1,0 +1,19 @@
+/* Button Styles */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-border-radius: 8;
+    -fx-font-weight: bold;
+}
+
+/* Exit Button */
+.button#btnExit {
+    -fx-background-color: #F44336;
+}
+
+/* Root Pane */
+.root {
+    -fx-background-color: #f0f0f0;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+
+<Pane prefHeight="726.0" prefWidth="1200.0" 
+      xmlns="http://javafx.com/javafx/8.0.171" 
+      xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="librarian.book_lostController"
+      stylesheets="@Librarian.css">
+    <children>
+        <!-- Sidebar Section -->
+        <VBox layoutX="0.0" layoutY="0.0" prefHeight="726.0" prefWidth="220.0" styleClass="sidebar">
+            <children>
+                <Label alignment="TOP_CENTER" prefHeight="651.0" prefWidth="167.0" styleClass="sidebar-title" text="BLib" />
+                <VBox alignment="CENTER" spacing="20.0" />
+                <!-- Back Button at Bottom -->
+                <VBox alignment="BOTTOM_CENTER" layoutY="650.0" prefHeight="91.0" prefWidth="186.0" spacing="10.0">
+                    <Button fx:id="btnBack" onAction="#Back" prefHeight="48.0" prefWidth="176.0" styleClass="btn-danger" text="⬅ Back" />
+                </VBox>
+            </children>
+        </VBox>
+
+        <!-- Main Container -->
+        <VBox layoutX="222.0" layoutY="14.0" prefHeight="680.0" prefWidth="959.0" spacing="25.0" styleClass="vcr-container">
+            <!-- Header -->
+            <Label styleClass="BL-header" text="🚨 Report a Lost Book" alignment="CENTER" />
+            
+            <!-- Form Section -->
+            <VBox alignment="CENTER" spacing="15.0" styleClass="form-container">
+                <GridPane hgap="10" vgap="15">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" prefWidth="120" />
+                        <ColumnConstraints halignment="LEFT" prefWidth="300" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="40" />
+                        <RowConstraints minHeight="40" />
+                    </rowConstraints>
+                    
+                    <Label styleClass="form-label" text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="username" styleClass="form-textfield" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                    <Label styleClass="form-label" text="Book ID:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TextField fx:id="bookId" styleClass="form-textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    
+                    <!-- Submit Button Aligned with Form -->
+                    <Button fx:id="submitButton" onAction="#handleSubmitButtonAction" styleClass="btn-primary" text="Report Lost Book" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                </GridPane>
+            </VBox>
+        </VBox>
+    </children>
+</Pane>

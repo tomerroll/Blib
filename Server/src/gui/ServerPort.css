@@ -1,0 +1,96 @@
+/* Background styling */
+.server-port-container {
+    -fx-background-color: #E3F2FD;
+    -fx-padding: 30;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+/* Title Label */
+.server-port-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #1565C0;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+/* Input Label */
+.server-port-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #1976D2;
+}
+
+/* Input Field */
+.server-port-textfield {
+    -fx-font-size: 18px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 40px;
+}
+
+.btn-apply {
+    -fx-background-color: #1E88E5;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-border-radius: 8;
+    -fx-font-weight: bold;
+}
+
+/* Exit Button */
+.btn-exit {
+    -fx-background-color: #D32F2F;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-border-radius: 8;
+    -fx-font-weight: bold;
+}
+
+/* Hover Effects */
+.btn-apply:hover {
+    -fx-background-color: #1565C0;
+}
+
+.btn-exit:hover {
+    -fx-background-color: #B71C1C;
+}
+
+
+/* Server Log Container */
+.server-log-container {
+    -fx-background-color: #E3F2FD;
+    -fx-padding: 30;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+/* Server Log Title */
+.server-log-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #1565C0;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+/* Log TextArea */
+.server-log-textarea {
+   
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #64B5F6;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+}
+
+/* IP Server Label */
+.server-log-ip {
+    -fx-font-size: 18px;
+    -fx-text-fill: #1976D2;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+    -fx-background-color: #E3F2FD;
+    -fx-border-radius: 5;
+}
