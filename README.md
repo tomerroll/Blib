@@ -10,6 +10,7 @@ This project is divided into three main components:
 - `SERVER` – The server-side application
 - `OCSF` – Open Communication Server Framework used for communication between client and server
 
+
 ## 🗃️ Database (SQL)
 
 The system uses an SQL database to store and manage library data such as books, users, subscriptions, and borrowing history.
